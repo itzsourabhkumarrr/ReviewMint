@@ -43,7 +43,9 @@
 
 @media screen and (min-width: 768px){
   :root{
-    --biggest-font-size: 4rem;
+    /* --biggest-font-size: 4rem; */
+    --biggest-font-size: 3.3rem;
+
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
@@ -161,6 +163,8 @@ img{
 }
 
 @media screen and (max-width: 768px){
+
+ 
   .nav__menu{
     position: fixed;
     top: -100%;
@@ -174,6 +178,9 @@ img{
     border-radius: 0 0 1rem 1rem;
     z-index: var(--z-fixed);
   }
+
+
+  
 }
 
 .nav__item{
@@ -181,8 +188,12 @@ img{
 }
 
 .nav__link, .nav__logo, .nav__toggle{
-  color: var(--text-color);
+  /* color: var(--text-color); */
+  color: var(--first-color-alt);
   font-weight: var(--font-medium);
+}
+.nav__logo {
+  font-size: 250%;
 }
 
 .nav__logo:hover{
@@ -281,8 +292,24 @@ img{
   transition: .3s;
 }
 
+
 .button:hover{
   background-color: var(--first-color-alt);
+}
+
+.topbutton {
+
+  margin-right: 10px;
+}
+
+.topbuttonflex {
+  /* width: 50%; */
+  margin-left: auto;
+  margin-right: auto;
+    display: flex;
+  flex-direction:  row;
+
+  justify-content: space-around;
 }
 
 /*========== ABOUT ==========*/
@@ -456,6 +483,7 @@ img{
 
 /*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 576px){
+
   .home__container,
   .about__container,
   .app__container{
@@ -538,6 +566,10 @@ img{
 }
 
 @media screen and (min-width: 960px){
+
+  .topbuttonflex {
+  width: 50%; 
+  }
   .bd-container{
     margin-left: auto;
     margin-right: auto;
@@ -558,4 +590,11 @@ img{
     .home__container {
         height: 640px;
     }
+}
+
+@media screen and (max-width: 768px){
+
+  .nav__logo {
+  font-size: 225%;
+} 
 }
