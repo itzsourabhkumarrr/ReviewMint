@@ -156,7 +156,7 @@ img{
 /*========== NAV ==========*/
 .nav{
   max-width: 1024px;
-  height: var(--header-height);
+  /* height: var(--header-height); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -193,12 +193,14 @@ img{
   font-weight: var(--font-medium);
 }
 .nav__logo {
-  font-size: 250%;
+  /* font-size: 250%; */
+  width: 35%;
+  margin-top: 20px;
 }
 
-.nav__logo:hover{
+/* .nav__logo:hover{
   color: var(--first-color);
-}
+} */
 
 .nav__link{
   transition: .3s;
@@ -260,6 +262,21 @@ img{
 }
 
 /*========== HOME ==========*/
+
+.green-stroke{
+  width: 70px;
+  height: 70px;
+  
+  rotate: 12deg;
+  /* transform: translate(y-20px); */
+
+}
+
+.home__headline{
+display: flex;
+
+}
+
 .home__container{
   height: calc(100vh - var(--header-height));
   align-content: center;
@@ -278,8 +295,9 @@ img{
 }
 
 .home__img{
-  width: 300px;
+  width: 95%;
   justify-self: center;
+  border-radius: 20px;
 }
 
 /*========== BUTTONS ==========*/
@@ -303,7 +321,7 @@ img{
 }
 
 .topbuttonflex {
-  /* width: 50%; */
+  /* width: 35%; */
   margin-left: auto;
   margin-right: auto;
     display: flex;
@@ -424,6 +442,77 @@ img{
   width: 230px;
   justify-self: center;
 }
+
+
+/*========== RECOMMENDATIONS ==========*/
+
+.recommendation__container{
+  /* grid-template-columns: repeat(2, 1fr); */
+  justify-content: center;
+}
+
+.recommendation__content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--container-color);
+  border-radius: .5rem;
+  box-shadow: 0 2px 4px rgba(3,74,40,.15);
+  padding: .75rem;
+}
+
+.recommendation__img{
+  width: 100px;
+  align-self: center;
+  margin-bottom: var(--mb-2);
+}
+
+.recommendation__name, .recommendation__preci{
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.recommendation__name{
+  font-size: var(--normal-font-size);
+}
+
+.recommendation__detail, .recommendation__preci{
+  font-size: var(--small-font-size);
+}
+
+.recommendation__detail{
+  margin-bottom: var(--mb-1);
+}
+
+.recommendation__button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  padding: .625rem .813rem;
+  border-radius: .5rem 0 .5rem 0;
+}
+
+
+
+/*========== FEEDBACK ==========*/
+.feedback__data{
+  text-align: center;
+}
+
+.feedback__description{
+  margin-bottom: var(--mb-3);
+}
+
+.feedback__img{
+  width: 280px;
+  border-radius: .5rem;
+  justify-self: center;
+}
+
+/*========== FEEDBACK FORM ==========*/
+
+
 
 /*========== CONTACT ==========*/
 .contact__container{
@@ -568,7 +657,7 @@ img{
 @media screen and (min-width: 960px){
 
   .topbuttonflex {
-  width: 50%; 
+  width: 35%; 
   }
   .bd-container{
     margin-left: auto;
@@ -595,6 +684,11 @@ img{
 @media screen and (max-width: 768px){
 
   .nav__logo {
-  font-size: 225%;
+  /* font-size: 225%; */
+  width: 50%;
+
 } 
+.green-stroke{
+  width: 10%;
+}
 }

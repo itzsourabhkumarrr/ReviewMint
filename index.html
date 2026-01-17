@@ -4,17 +4,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--========== BOX ICONS ==========-->
+        <!--========== BOX ICONS =====gg=====-->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
 
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+        <link rel="icon" type="image/png"  href="assets/img/logo/logo.png">
         <title>ReviewMint</title>
+        
     </head>
     <body>
-
+        
         <!--========== SCROLL TOP ==========-->
         <a href="#" class="scrolltop" id="scroll-top">
             <i class='bx bx-chevron-up scrolltop__icon'></i>
@@ -23,14 +25,15 @@
         <!--========== HEADER ==========-->
         <header class="l-header" id="header">
             <nav class="nav bd-container">
-                <a href="#" class="nav__logo"><b>ReviewMint</b></a>
+                <!-- <a href="#" class="nav__logo"><b>ReviewMint</b></a> -->
+                <a href="#" class="nav__logo"><img src="assets/img/logo/name-logo.png" alt=""></a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                         <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
 
                         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
@@ -48,7 +51,10 @@
             <section class="home" id="home">
                 <div class="home__container bd-container bd-grid">
                     <div class="home__data">
-                        <h1 class="home__title">Taste Verified ✅</h1>
+                        <div class="home__headline">
+                            <h1 class="home__title">Tastified </h1>
+                            <img class="green-stroke" src="assets/img/green-stroke.jpg" alt="tick">
+                        </div>
                         <h2 class="home__subtitle">Discover the best food spots in <span style="color: var(--first-color); font-size: 140%; ">Etawah!</span></h2>
                         <!-- <span class="topbuttonflex">
                         <a href="#" class="button topbutton">Categories</a>
@@ -61,7 +67,7 @@
 
                     
     
-                    <img src="assets/img/home.png" alt="" class="home__img">
+                    <img src="assets/img/home-main.jpg" alt="" class="home__img">
                 </div>
             </section>
 
@@ -85,6 +91,7 @@
         border-radius: 30px;
     ">
         <!-- Search Icon -->
+        
         <span style="
             font-size: 22px;
             color: #777;
@@ -92,6 +99,7 @@
         ">
             <!-- <i class="uil uil-search"></i> -->
         </span>
+        
 
         <!-- Input -->
         <input 
@@ -105,11 +113,12 @@
                 padding: 10px;
             "
         >
-            <i class="uil uil-search" style="
+        <a href="#">
+        <i class="uil uil-search" style="
                font-size: 150%;
                 padding-right: 20px;
             "></i>
-
+        </a>
         
     </div>
 </div>
@@ -118,15 +127,14 @@
 
 
 <span class="topbuttonflex">
-                        <a href="#" class="button topbutton">Categories</a>
+                        <a href="#" class="button topbutton">Category 1</a>
                         
-                        <a href="#" class="button topbutton">Categories</a>
+                        <a href="#" class="button topbutton">Category 2</a>
                         
-                        <a href="#" class="button topbutton">Categories</a>
+                        <a href="#" class="button topbutton">Category 3</a>
                         </span>
 <!--========== SEARCH BAR ==========-->
-
-            
+   
            
 
             <!--========== SERVICES ==========-->
@@ -198,7 +206,7 @@
                             16.8875 47.057C17.3045 47.4744 17.9811 47.4746 18.3984 47.0576C18.8157 
                             46.6405 18.816 45.964 18.3989 45.5466Z"/>
                         </svg>
-                        <h3 class="services__title">Excellent food</h3>
+                        <h3 class="services__title">Genuine Review</h3>
                         <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
                     </div>
 
@@ -355,7 +363,7 @@
                             </clipPath>
                             </defs>
                         </svg>
-                        <h3 class="services__title">Fast food</h3>
+                        <h3 class="services__title">Room for Growth</h3>
                         <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
                     </div>
 
@@ -411,7 +419,7 @@
                                 </clipPath>
                                 </defs>
                         </svg>
-                        <h3 class="services__title">Delivery</h3>
+                        <h3 class="services__title">Best Community</h3>
                         <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
                     </div>
                 </div>
@@ -424,30 +432,81 @@
 
                 <div class="menu__container bd-grid">
                     <div class="menu__content">
+                        <img src="assets/img/plate3.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Hotel Ganesha</h3>
+                        <span class="menu__detail">Best affordable Thali</span>
+                        <span class="menu__preci">4.9⭐</span>
+                        <a href="#" class="button menu__button"><i class='bx  bx-badge-check'></i> </a>
+                    </div>
+
+                    <div class="menu__content">
                         <img src="assets/img/plate1.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Barbecue salad</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$22.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                        <h3 class="menu__name">Jaika Restaurant</h3>
+                        <span class="menu__detail">Best Biryani in town</span>
+                        <span class="menu__preci">4.9⭐</span>
+                        <a href="#" class="button menu__button"><i class='bx  bx-badge-check'></i> </a>
                     </div>
 
                     <div class="menu__content">
                         <img src="assets/img/plate2.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Salad with fish</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$12.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                        <h3 class="menu__name">Shree Restaurant</h3>
+                        <span class="menu__detail">Delicious pavbhaji</span>
+                        <span class="menu__preci">4.9⭐</span>
+                        <a href="#" class="button menu__button"><i class='bx  bx-badge-check'></i> </a>
                     </div>
                     
-                    <div class="menu__content">
-                        <img src="assets/img/plate3.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Spinach salad</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
+                    
                 </div>
             </section>
+
+
+             <!--========== ABOUT ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        <span class="section-subtitle about__initial">About us</span>
+                        <h2 class="section-title about__initial">We help you to find <br> best food</h2>
+                        <p class="about__description">We provide you the honest reviews of every restaurants in the city you heard of, with our excellent community base, rate any place or scroll the reviews if you are confused where to eat today.</p>
+                        <a href="#" class="button">Explore categories</a>
+                    </div>
+
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+                </div>
+            </section>
+
+
+
+            <!--========== RECOMMENDATIONS ==========-->
+            <section class="recommendation section bd-container" id="menu">
+                <span class="section-subtitle">Recommendations</span>
+                <h2 class="section-title">What locals are saying</h2>
+
+                <div class="recommendation__container bd-grid">
+                    <div class="recommendation__content">
+                        <h3 class="recommendation__name">Adarsh Kushwaha</h3>
+                        <span class="recommendation__detail">Maincourse at Leela palace is just awesome</span>
+                        <span class="recommendation__preci">4.9⭐⭐⭐⭐⭐</span>
+                        <a href="#" class="button recommendation__button"><i class='bx  bx-heart-circle'></i>  </a>
+                    </div>
+
+                    <div class="recommendation__content">
+                        <h3 class="recommendation__name">Adarsh Kushwaha</h3>
+                        <span class="recommendation__detail">Maincourse at Leela palace is just awesome</span>
+                        <span class="recommendation__preci">4.5⭐⭐⭐⭐</span>
+                        <a href="#" class="button recommendation__button"><i class='bx  bx-heart-circle'></i> </a>
+                    </div>
+
+                    <div class="recommendation__content">
+                        <h3 class="recommendation__name">Adarsh Kushwaha</h3>
+                        <span class="recommendation__detail">Maincourse at Leela palace is just awesome</span>
+                        <span class="recommendation__preci">4.8⭐⭐⭐⭐⭐</span>
+                        <a href="#" class="button recommendation__button"><i class='bx  bx-heart-circle'></i>  </a>
+                    </div>
+                    
+                    
+                </div>
+            </section>
+
 
             <!--===== APP =======-->
             <section class="app section bd-container">
@@ -455,7 +514,7 @@
                     <div class="app__data">
                         <span class="section-subtitle app__initial">App</span>
                         <h2 class="section-title app__initial">App is currently unavailable</h2>
-                        <p class="app__description">Find our application and download it, you can make reservations, food orders, see your deliveries on the way and much more.</p>
+                        <p class="app__description">Soon coming...Find our application and download it, you can add reviews & new restaurants, find out best fit for you, see ratings and much more.</p>
                         <div class="app__stores">
                             <a href="#"><img src="assets/img/app1.png" alt="" class="app__store"></a>
                             <a href="#"><img src="assets/img/app2.png" alt="" class="app__store"></a>
@@ -467,17 +526,43 @@
             </section>
 
 
-             <!--========== ABOUT ==========-->
-            <section class="about section bd-container" id="about">
-                <div class="about__container  bd-grid">
-                    <div class="about__data">
-                        <span class="section-subtitle about__initial">About us</span>
-                        <h2 class="section-title about__initial">We cook the best <br> tasty food</h2>
-                        <p class="about__description">We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us.</p>
-                        <a href="#" class="button">Explore history</a>
-                    </div>
+            
 
-                    <img src="assets/img/about.jpg" alt="" class="about__img">
+
+
+            <!--========== FEEDBACK ==========-->
+            <section class="feedback section bd-container" id="feedback">
+                <div class="feedback__container  bd-grid">
+                    <div class="feedback__data">
+                        <span class="section-subtitle feedback__initial">Send feedback</span>
+                        <h2 class="section-title feedback__initial">We would like to hear<br> from you</h2>
+                        <p class="feedback__description">We provide you the honest reviews of every restaurants in the city you heard of, with our excellent community base, rate any place or scroll the reviews if you are confused where to eat today.</p>
+                        <a href="#" class="button">Send Feedback</a>
+                    </div>
+                    <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="user_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="user_email" required>
+            </div>
+            <div class="form-group">
+                <label for="satisfaction">Are you satisfied with our service?</label>
+                <select id="satisfaction" name="satisfaction_level">
+                    <option value="very_satisfied">Very Satisfied</option>
+                    <option value="satisfied">Satisfied</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="unsatisfied">Unsatisfied</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Comments/Suggestions:</label>
+                <textarea id="feedback" name="user_feedback" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit Feedback</button>
+        </form>
                 </div>
             </section>
 
@@ -487,7 +572,7 @@
                     <div class="contact__data">
                         <span class="section-subtitle contact__initial">Let's talk</span>
                         <h2 class="section-title contact__initial">Contact us</h2>
-                        <p class="contact__description">If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</p>
+                        <p class="contact__description">If you have any collaboration opportunity or you want any special appearance on our platform, contact us and we will attend you quickly, with our 24/7 chat service.</p>
                     </div>
 
                     <div class="contact__button">
@@ -501,8 +586,9 @@
         <footer class="footer section bd-container">
             <div class="footer__container bd-grid">
                 <div class="footer__content">
-                    <a href="#" class="footer__logo">Tasty Food</a>
-                    <span class="footer__description">Restaurant</span>
+                    <!-- <a href="#" class="footer__logo">ReviewMint</a> -->
+                     <a href="#"><img src="assets/img/logo/name-logo.png" alt=""></a>
+                    <span class="footer__description">Review Partner</span>
                     <div>
                         <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
                         <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
@@ -513,9 +599,9 @@
                 <div class="footer__content">
                     <h3 class="footer__title">Services</h3>
                     <ul>
-                        <li><a href="#" class="footer__link">Delivery</a></li>
-                        <li><a href="#" class="footer__link">Pricing</a></li>
-                        <li><a href="#" class="footer__link">Fast food</a></li>
+                        <li><a href="#" class="footer__link">Add Reviews</a></li>
+                        <li><a href="#" class="footer__link">Add Restaurants</a></li>
+                        <li><a href="#" class="footer__link">Collaboration</a></li>
                         <li><a href="#" class="footer__link">Reserve your spot</a></li>
                     </ul>
                 </div>
@@ -533,9 +619,9 @@
                 <div class="footer__content">
                     <h3 class="footer__title">Adress</h3>
                     <ul>
-                        <li>Etawah</li>
-                        <li>Etawah</li>
-                        <li>999 - XXX - XXX</li>
+                        <li>Etawah Line 1</li>
+                        <li>Etawah Line 2</li>
+                        <li>999 - 888 - 777</li>
                         <li>info@reviewmint.in</li>
                     </ul>
                 </div>
@@ -551,3 +637,4 @@
         <script src="assets/js/main.js"></script>
     </body>
 </html>
+
